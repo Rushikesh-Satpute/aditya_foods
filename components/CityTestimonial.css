@@ -1,0 +1,154 @@
+/* Styles for large screens (desktops/tablets) */
+.city-container-wrapper {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: end;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.city-heading {
+  margin: 20px auto 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 45px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.city-container {
+  width: 280px;
+  height: 380px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 
+              0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transform: translateY(0);
+  overflow: hidden;
+  border: solid 1px black;
+}
+
+.city-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3), 
+              0 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.city-arrows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(330px * 2 + 25px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.city-scroll-button {
+  background-color: #ed2124;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.city-scroll-button:hover {
+  transform: scale(1.1);
+}
+
+.city-para {
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+.city-container-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+}
+
+.city-third {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.city-role{
+  margin-top: 50px;
+}
+
+/* Mobile view: Show 1 testimonial */
+@media (max-width: 700px) {
+  .city-container-wrapper {
+    overflow-x: auto;
+    justify-content: flex-start;
+    scroll-snap-type: x mandatory;
+    max-width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  .city-container {
+    /* width: 90%;         Takes up 80% of screen for single-card view */
+    width: 360px;
+    height: 500px;
+    margin-left: 10px;
+    scroll-snap-align: center;
+  }
+
+  .city-para {
+    height: 180px;
+    font-size: 15px;
+  }
+
+  .city-container-heading {
+    font-size: 18px;
+  }
+
+  .city-arrows {
+    position: absolute;
+    top: 50%;
+    left: 91%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    gap: 10px;
+    width: auto;
+  }
+
+  .city-scroll-button:first-child {
+    display: none; /* Hide left arrow */
+  }
+
+  .city-scroll-button:last-child {
+    pointer-events: all;
+    position: relative;
+    transform: translateX(50%);
+    z-index: 10;
+    margin: 0;
+    top: 0;
+  }
+  .city-role{
+    margin-top: 130px;
+  }
+}

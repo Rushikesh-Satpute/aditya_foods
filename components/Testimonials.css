@@ -1,0 +1,284 @@
+.testimonials-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 80px;
+  /* flex-wrap: wrap; */
+}
+
+/* Left Side */
+.test-left {
+  width: 40%;
+  margin-bottom: 30px;
+  margin-left: 4%;
+}
+
+.test-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.test-left p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.testimonial-image {
+  margin-left: 40px;
+}
+
+.test-para {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+}
+
+.test-heading {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 50px;
+}
+
+.read-all-btn {
+  background-color: #ed2124;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 30px;
+  width: max-content;
+}
+
+.read-all-btn:hover {
+  background-color: #cc2a2a;
+}
+
+/* Right Side */
+/* .test-right {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-inline-start: 10px;
+  background-color: aqua;
+} */
+
+/* Arrows */
+.scroll-btn {
+  background-color: #ed2124;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-btn:hover {
+  background-color: #ed2124;
+}
+
+/* Testimonials Container */
+/* .testimonials-container {
+  display: flex;
+  gap: 25px;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+} */
+
+/* Individual Testimonial */
+.testimonial-card {
+  width: 280px;
+  height: 380px;
+  border: 1.8px solid black;
+  border-radius: 12px;
+  padding: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.test-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 30px;
+  font-style: oblique;
+  font-size: 20px;
+}
+
+.star-icon {
+  color: gold;
+}
+
+.testimonial-text {
+  height: 200px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+}
+
+.testimonial-footer {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  margin: 0;
+}
+
+.scroll-btn-abs {
+  position: relative;
+  top: 0;
+}
+
+.test-right {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .testimonials-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .test-left {
+    width: 100%;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+
+  .test-heading {
+    font-size: 36px;
+  }
+
+  .test-left h2 {
+    font-size: 2rem;
+  }
+
+  .test-left p {
+    font-size: 1.2rem;
+  }
+
+  .test-para {
+    font-size: 30px;
+  }
+
+  .test-right {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .testimonials-container {
+    gap: 15px;
+    max-width: 100%;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    max-width: 340px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .scroll-btn {
+    position: relative;
+    top: auto;
+    transform: none;
+    margin: 10px;
+  }
+
+  .read-all-btn {
+    margin: 30px auto 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .test-heading {
+    font-size: 30px;
+  }
+
+  .test-left h2 {
+    font-size: 1.7rem;
+  }
+
+  .test-left p {
+    font-size: 1rem;
+  }
+
+  .test-para {
+    font-size: 24px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .read-all-btn {
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+} */
+@media (max-width: 1000px) {
+  .testimonials-container {
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 80%;
+    max-width: 320px;
+  }
+  .testimonials-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    flex-wrap: wrap;
+  }
+  .testimonial-card {
+    margin-top: 20px;
+    width: 250px;
+    height: 400px;
+    border: 1.8px solid black;
+    border-radius: 12px;
+    /* padding: 15px; */
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-right: 20px;
+  }
+}

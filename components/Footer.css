@@ -1,0 +1,138 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Container */
+.footer {
+  background-color: #00b3ef74;
+  text-align: center;
+}
+
+/* Horizontal Line */
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #0c545500;
+}
+
+/* Footer Content */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Sections - flex column layout */
+.footer-section {
+  
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+}
+
+/* Social Section - Align to the Left */
+.footer-section.social-section {
+  margin-left: 30px;
+}
+
+/* Contact Section - Center Alignment */
+.footer-section.contact-section {
+  align-items: center;
+}
+
+/* Links Section - Align to the Right */
+.footer-section.links-section {
+  align-items: flex-end;
+  margin-right: 20px;
+}
+
+/* Section Headings */
+.footer-section h3 {
+  font-size: 1.25rem;
+  color: #eb141b;
+  margin-bottom: 1rem;
+}
+
+/* List Styling */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  justify-items:baseline;
+}
+
+/* List Items */
+.footer-section ul li {
+  color: #000000;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Social Icons */
+.social-icon {
+  margin-right: 10px;
+  color: #ed2124;
+}
+
+/* Contact Icons */
+.contact-icon {
+  margin-right: 10px;
+  color: #ed2124;
+}
+
+/* Links Section - Align Links to the Right */
+.footer-section.links-section ul li {
+  justify-content: flex-end;
+}
+
+/* Links Styling */
+.footer-section ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ed2124;
+}
+
+/* Copyright Section */
+.copyright {
+  color: black;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 0.9rem;
+  background-color: #00b4ef;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+  }
+
+  .footer-section {
+    align-items: center;
+    margin: 0;
+  }
+
+  .footer-section.links-section ul li {
+    justify-content: center;
+  }
+
+  .footer-section.contact-section ul {
+    align-items: center;
+    justify-items: center;
+  }
+}

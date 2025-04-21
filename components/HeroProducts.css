@@ -1,0 +1,106 @@
+/* Full-Screen Snap Section */
+.hero-page {
+  height: 100vh;
+  overflow-y: hidden;
+  padding-top: 20px;
+  background-color: #00b3ef74;
+}
+
+.section_title{
+  color: black;
+}
+.city-heading{
+  position: relative;
+}
+
+.floating-burger4 {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  left: 80%;
+  bottom: 5px;
+  animation: floatBurger 3s ease-in-out infinite;
+}
+
+.products-container-hero{
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  overflow-y: scroll;
+  height: 120vh;
+  overflow-x: hidden;
+}
+/* Product Animation */
+.product {
+  opacity: 0;
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  background-color: none;
+  padding: 20px;
+  /* border-radius: 8px; */
+  will-change: transform;
+  margin-bottom: 0px;
+  /* width: 50%; */
+}
+
+.product.from-left {
+  transform: translateX(-100px);
+  background: linear-gradient(to left, #46d1ff00, #cef3ff);
+  height: fit-content;
+}
+
+.product.from-right {
+  margin-top: 100px;
+  transform: translateX(100px);
+  text-align: right;
+  background: linear-gradient(to right, #46d1ff00, #cef3ff);
+}
+
+.product.scroll-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.product.scroll-out.from-left {
+  transform: translateX(-100px);
+}
+
+.product.scroll-out.from-right {
+  transform: translateX(100px);
+}
+
+/* Flexbox layout for image and text */
+.prod-information {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-description{
+  max-width: 750px;
+}
+
+.align-left {
+  flex-direction: row;
+}
+
+.align-right {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+/* Image styling */
+.product-image {
+  width: 180px;
+
+  height: 170px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.prod-name .h3{
+  color: #ed2124;
+  font-weight: bold;
+}
+
+.product-price{
+  font-weight: bold;
+}
